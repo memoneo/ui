@@ -17,7 +17,7 @@ export interface TopicTypeInfo {
 
 export type TopicTypeInfoData = SelectionType | undefined
 
-export type TopicType = "text-simple" | "text-5rated" | "selection" | "person-selection"
+export type TopicType = "text-simple" | "text-5rated" | "selection" | "person-selection" | "goal-selection"
 
 export interface TopicLog {
   id: string
@@ -53,6 +53,7 @@ export type TopicLogValue =
   | TopicLogValueTextFiveRated
   | TopicLogValueSelection
   | TopicLogValuePersonSelection
+  | TopicLogValueGoalSelection
 
 export interface TopicLogValueSelection {
   selection: string[]
@@ -60,6 +61,10 @@ export interface TopicLogValueSelection {
 
 export interface TopicLogValuePersonSelection {
   personSelection: string[]
+}
+
+export interface TopicLogValueGoalSelection {
+  goalSelection: string[]
 }
 
 export interface TopicLogValueContainer<T extends TopicLogValue> {
