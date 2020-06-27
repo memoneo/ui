@@ -72,6 +72,7 @@ export interface TopicLogValueContainer<T extends TopicLogValue> {
   topicLogId: string
   type: TopicLogValueType
   value: T
+  encrypted: boolean
 }
 
 export interface TopicTypeInfoSelectionData extends TopicTypeInfo {
