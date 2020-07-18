@@ -5,4 +5,5 @@ export interface Goal {
     parent?: string | Goal
     deleted: boolean
     rank: number
+    progress: number
 }
