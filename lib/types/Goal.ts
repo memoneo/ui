@@ -6,4 +6,7 @@ export interface Goal {
     deleted: boolean
     rank: number
     progress: number
+    status: GoalStatus
 }
+
+export type GoalStatus = "on_hold" | "active" | "cancelled"
