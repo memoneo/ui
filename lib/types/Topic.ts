@@ -8,6 +8,7 @@ export interface Topic {
   typeInfo: TopicTypeInfo
   optional: boolean
   deleted: boolean
+  hasVoice: boolean
 }
 
 export interface TopicTypeInfo {
